@@ -7,7 +7,8 @@ body{
   font-family: "Oswald"; 
 }
 .container{
-  max-width: 1920px;
+  /* width: 1920px; */
+  width: 100%;
 }
 
 /* header */
@@ -17,6 +18,7 @@ header
   justify-content:space-around;
   align-items:center;
   height:100px;
+  width: 1920px;
 }
 
 .navbar
@@ -26,7 +28,8 @@ header
   justify-content: space-between;
   font-size: 18px;
   font-weight: 400;
-  
+  height: 15px;
+  align-items: center;
 }
 .home{
   color: #A93226;
@@ -45,7 +48,8 @@ header
   background-image: url(/images/Diamond_Balls_Banner_Web_1.png);
   background-position: center;
   text-align: center;
-  
+  background-size: cover;
+  width: 1920px;
 }
 .banner{
   display: flex;
@@ -89,11 +93,11 @@ background-color: #A93226;
 display: flex;
 justify-content: center;
 align-items: center;
+width: 1920px;
 }
 .category1{
   width: 1600px;
   display: flex;
-  gap: 40px;
 }
 .cat-img
 {
@@ -137,19 +141,27 @@ h2{
 
 /* Most popular item */
 .popular-item{
-  /* height: 637px; */
   text-align: center;
-  padding: 60px 160px 0 160px ;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 1920px;
+  padding: 60px 160px 0 160px;
+}
+.card-container{
+  width: 332px;
+  height: 444px;
+}
+.popular-item-container{
+  width: 1600px;
+  height: 637px;
 }
 .popular-item-heading{
   display: flex;
   align-items: center;
    gap:50px;
-  
+  width: 675px;
 }
 .line1{
   width: 120px;
@@ -162,6 +174,7 @@ h2{
 h3{
   font-size: 40px;
   font-weight: 400;
+  width: 355px;
   line-height: 30px;
 }
 .popular-item-img-container{
@@ -179,7 +192,7 @@ h3{
   margin-left: 50px;
 }
 .popular-item-img{
-  width: 331px;
+  width: 332px;
   border: 1px solid #CFCFCF;
   height: 374px;
   text-align: center;
@@ -189,10 +202,9 @@ h3{
   align-items: center;
 }
 .line3{
-  border: 1px solid #CFCFCF;
-  width: 1400px;
+  border: 1px solid rgba(207, 207, 207, 1);
+  width: 1600px;
   margin:0 auto; 
-  margin-top: 70px;
 }
 span{
   color:#A93226
@@ -222,7 +234,7 @@ span{
 /* special discount */
 .offer{
   height: 600px;
-  background-image: url(./images/Rectangle\ 112.png);
+  background-image: url(./images/Rectangle112.png);
   background-size: cover;
   margin-top: 70px;
   background-position: center;
@@ -232,6 +244,7 @@ span{
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 1920px;
 }
 .discount-heading{
   font-size: 100px;
@@ -275,7 +288,7 @@ span{
 {
   height: 232px;
   background-color: #A93226;
-  /* padding-top: 50px; */
+  width: 1920px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -313,6 +326,7 @@ input{
 footer{
   height: 400px;
   background-color: black;
+  width: 1920px;
 }
 
 .copyright{
@@ -323,12 +337,15 @@ footer{
   font-family: "Poppins";
   margin-left: 160px;
   letter-spacing: 10%;
- margin-top: 20px;
+ margin-top: 10px;
+ text-transform: uppercase;
 }
 .footer-info{
-margin: 0 160px;
+margin: 0 auto;
 color: white;
 padding-top: 60px;
+padding-left: 50px;
+padding-right: 50px;
 display: flex;
 justify-content: space-between;
 
@@ -354,4 +371,163 @@ justify-content: space-between;
   height: 1px;
   opacity: 30%;
   margin-top: 80px;
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .banner-heading {
+    font-size: 60px;
+    margin-top: 120px;
+  }
+
+  .copyright{
+    margin-top: 10px;
+  }
+  .arrow {
+    gap: 600px;
+    margin-top: -100px;
+  }
+
+  .category1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cat-img1, .cat-img2, .cat-img3 {
+    width: 100%;
+    height: 300px;
+  }
+
+  .popular-item {
+    padding: 30px 40px;
+  }
+
+  .popular-item-img-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info h4 {
+    font-size: 14px;
+  }
+
+  .footer-p {
+    font-size: 13px;
+  }
+}
+
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .navbar {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .banner-heading {
+    font-size: 45px;
+    margin-top: 80px;
+  }
+
+  .arrow {
+    gap: 200px;
+    margin-top: -80px;
+  }
+
+  .category1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cat-img1, .cat-img2, .cat-img3 {
+    width: 90%;
+    height: 250px;
+  }
+
+  .popular-item {
+    padding: 20px 10px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-info h4 {
+    font-size: 12px;
+  }
+
+  .footer-p {
+    font-size: 12px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .banner-heading {
+    font-size: 35px;
+    margin-top: 60px;
+  }
+
+  .shop-now {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .category1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cat-img1, .cat-img2, .cat-img3 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .popular-item {
+    padding: 20px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+  }
+  .footer-hr {
+   margin-top: 0;
+  }
+
+  .footer-info h4 {
+    font-size: 10px;
+  }
+
+  .footer-p {
+    font-size: 10px;
+  }
 }
