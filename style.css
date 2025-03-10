@@ -386,6 +386,13 @@ justify-content: space-between;
     padding: 20px 0;
     gap: 10px;
 }
+.arrow-l img{
+  display: none;
+
+}
+.arrow-r img{
+  display: none;
+}
   .email{
     width: 800px;
   }
