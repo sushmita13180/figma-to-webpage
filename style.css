@@ -1,13 +1,12 @@
 *{
-  padding: 0;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 0;
 }
 body{
   font-family: "Oswald"; 
-}
-.container{
   width: 100%;
+  max-width: 1920px;
 }
 
 /* header */
@@ -45,10 +44,10 @@ header
 .banner1{
   height: 665px;
   background-image: url(/images/Diamond_Balls_Banner_Web_1.png);
-  background-position: center;
   text-align: center;
   background-size: cover;
   width: 1920px;
+  object-fit: cover;
 }
 .banner{
   display: flex;
@@ -105,8 +104,8 @@ width: 1920px;
 }
 .cat-img1{
   background-image: url(./images/Rectangle1.png);
-  background-position: center; 
   background-size: cover;
+  object-fit: cover;
   width: 513px;
   height: 513px; 
   text-align: center;
@@ -114,7 +113,7 @@ width: 1920px;
 }
 .cat-img2{
   background-image: url(./images/Rectangle.png);
-  background-position: center; 
+  object-fit: cover;
   background-size: cover;
   width: 513px;
   text-align: center;
@@ -123,9 +122,9 @@ width: 1920px;
   
 }
 .cat-img3{
-  background-image: url(./images/Rectangle2.png);
-  background-position: center; 
+  background-image: url(./images/Rectangle2.png); 
   background-size: cover;
+  object-fit: cover;
   width: 513px;
   text-align: center;
   padding-top: 260px;
@@ -237,7 +236,7 @@ span{
   background-image: url(./images/Rectangle112.png);
   background-size: cover;
   margin-top: 70px;
-  background-position: center;
+  object-fit: cover;
   object-fit: contain;
   display: flex;
   flex-direction: column;
